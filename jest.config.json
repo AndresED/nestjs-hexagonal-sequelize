@@ -1,0 +1,45 @@
+{
+  "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+  ],
+  "rootDir": ".",
+  "testRegex": ".*\\.spec\\.ts$",
+  "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "testEnvironment": "node",
+  "coveragePathIgnorePatterns": [
+    "node_modules",
+    "test-config",
+    "interfaces",
+    "jestGlobalMocks.ts",
+    ".module.ts",
+    "<rootDir>/src/main.ts",
+    "<rootDir>/test",
+    ".mock.ts",
+    ".dto.ts",
+    ".entity.ts",
+    ".interface.ts",
+    ".guard.ts",
+    ".filter.ts",
+    ".interceptor.ts",
+    ".decorators.ts",
+    ".option.ts"
+  ],
+  "coverageDirectory": "../coverage",
+  "collectCoverageFrom": [
+      "**/*.(t)s",
+      "!main.(t|j)s",
+      "!**/*.module.(t|j)s",
+      "!**/*.input.(t|j)s",
+      "!**/*.entity.(t|j)s",
+      "!**/*.strategy.(t|j)s",
+      "!**/*.dto.(t|j)s",
+      "!**/*.pipe.(t|j)s"
+  ],
+  "modulePathIgnorePatterns": [
+    "<rootDir>/dist"
+  ]
+}
